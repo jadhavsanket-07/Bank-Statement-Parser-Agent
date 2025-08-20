@@ -234,8 +234,3 @@ On test failures, the agent:
 **🎯 Challenge Completed:** This agent successfully demonstrates autonomous code generation, self-debugging loops, and production-ready parser creation for bank statement PDFs.
 
 ---
-
-*Ready to see it in action? Run the 60-second demo:*
-```bash
-git clone <repo> && cd ai-agent-challenge && pip install -r requirements.txt && python agent.py --target icici --pdf data/icici/icici_sample.pdf --csv data/icici/icici_sample.csv
-```
