@@ -70,7 +70,7 @@ python agent.py --target icici --pdf data/icici/icici_sample.pdf --csv data/icic
 ### 5. Verify Results
 The agent will generate `custom_parsers/icici_parser.py` and run automated tests. Check for the success message:
 ```
-✅ Parser passed all tests!
+✅ Parser Passed All Tests!
 ```
 
 ## 📁 Project Structure
@@ -78,15 +78,15 @@ The agent will generate `custom_parsers/icici_parser.py` and run automated tests
 ```
 ai-agent-challenge/
 ├── agent.py                 # Main agent orchestrator
-├── custom_parsers/           # Generated parsers output directory
+├── custom_parsers/          # Generated parsers output directory
 │   └── icici_parser.py      # Auto-generated ICICI parser
 ├── data/                    # Sample data directory
 │   └── icici/
 │       ├── icici_sample.pdf
 │       └── icici_sample.csv
 ├── requirements.txt         # Python dependencies
-├── .env                    # API keys (create this)
-└── README.md               # This file
+├── .env                     # API keys (create this)
+└── README.md                # This file
 ```
 
 ## 🔧 Advanced Usage
@@ -165,12 +165,12 @@ def parse(pdf_path: str) -> pd.DataFrame:
 ## 🛠️ Dependencies
 
 ```
-pdfplumber>=0.9.0      # PDF table extraction
-pandas>=1.3.0          # Data manipulation  
-python-dotenv>=0.19.0  # Environment variables
+pdfplumber             # PDF table extraction
+pandas                 # Data manipulation  
+python-dotenv          # Environment variables
 google-generativeai    # Google Gemini API
 groq                   # Groq API client
-pytest>=7.0.0          # Testing framework
+pytest                 # Testing framework
 ```
 
 ## 🎭 How It Works
@@ -221,48 +221,6 @@ On test failures, the agent:
 - Clear CLI interface
 - Detailed logging and feedback
 - Modular, extensible architecture
-
-## 🚨 Troubleshooting
-
-### Common Issues
-
-**API Key Not Found**
-```bash
-❌ GOOGLE_API_KEY environment variable not set
-```
-**Solution:** Create `.env` file with your API keys
-
-**PDF Not Found**
-```bash
-❌ PDF file not found: data/icici/icici_sample.pdf
-```
-**Solution:** Verify file paths and ensure files exist
-
-**Parser Generation Failed**
-```bash
-❌ Could not generate a working parser after max iterations
-```
-**Solution:** Check PDF format, try different provider, or increase max attempts
-
-### Debug Mode
-Add verbose logging by modifying the agent:
-```python
-# Add debug prints in agent.py
-print(f"PDF Analysis: {pdf_analysis}")
-print(f"Generated Code: {generated_code}")
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
