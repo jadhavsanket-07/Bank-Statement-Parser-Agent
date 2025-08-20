@@ -1,6 +1,6 @@
 # 🤖 Agent-as-Coder: Bank Statement PDF Parser Generator
 
-> **An autonomous AI agent that generates custom PDF parsers for bank statements using LLM-powered code generation and self-correction loops.**
+**An autonomous AI agent that generates custom PDF parsers for bank statements using LLM-powered code generation and self-correction loops.**
 
 ## 🎯 Overview
 
